@@ -21,7 +21,7 @@ def register_user(request):
 			return redirect('home')
 	else:
 		form = RegisterForm()
-	
+
 	context = {'form': form}
 	return render(request, 'register.html', context)
 
